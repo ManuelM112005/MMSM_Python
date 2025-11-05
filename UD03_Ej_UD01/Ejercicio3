@@ -1,0 +1,11 @@
+# 1. Pedir al usuario la longitud del lado de un cuadrado
+try:
+    lado = float(input("Introduce la longitud del lado del cuadrado: "))
+
+    # 2. Calcular el área del cuadrado
+    area = lado * lado
+
+    # 3. Mostrar el resultado
+    print("El área del cuadrado con lado", lado, "es:", area)
+except ValueError:
+    print("Error: Por favor, introduce un número válido.")
