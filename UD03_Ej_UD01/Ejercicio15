@@ -1,0 +1,4 @@
+# Lee dos números y muestra el mayor
+a = float(input("Número 1: "))
+b = float(input("Número 2: "))
+print(f"Mayor: {max(a, b)}")

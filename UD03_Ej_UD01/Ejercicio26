@@ -1,0 +1,21 @@
+# Calcula salario neto con horas extra e impuestos
+nombre = input("Nombre: ")
+horas = float(input("Horas: "))
+tarifa = float(input("Tarifa/hora: "))
+
+# Calcula salario bruto con horas extra
+if horas <= 35:
+    bruto = horas * tarifa
+else:
+    bruto = 35 * tarifa + (horas - 35) * tarifa * 1.5
+
+# Calcula impuestos por tramos
+if bruto <= 500:
+    impuestos = 0
+elif bruto <= 900:
+    impuestos = (bruto - 500) * 0.25
+else:
+    impuestos = 400 * 0.25 + (bruto - 900) * 0.45
+
+neto = bruto - impuestos
+print(f"{nombre}: Bruto={bruto:.2f}€, Impuestos={impuestos:.2f}€, Neto={neto:.2f}€")

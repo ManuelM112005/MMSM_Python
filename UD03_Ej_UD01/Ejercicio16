@@ -1,0 +1,6 @@
+# Lee un número y dice si es positivo o negativo
+n = float(input("Número: "))
+if n >= 0:
+    print("Positivo")
+else:
+    print("Negativo")

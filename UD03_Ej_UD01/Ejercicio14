@@ -1,0 +1,10 @@
+# Lee dos números y muestra suma, resta, producto y división
+a = float(input("Número 1: "))
+b = float(input("Número 2: "))
+print(f"Suma: {a+b}")
+print(f"Resta: {a-b}")
+print(f"Producto: {a*b}")
+if b != 0:
+    print(f"División: {a/b}")
+else:
+    print("No se puede dividir por cero")

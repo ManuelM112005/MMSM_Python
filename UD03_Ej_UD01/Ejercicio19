@@ -1,0 +1,6 @@
+# Lee tres números y muestra mayor y menor
+a = float(input("Número 1: "))
+b = float(input("Número 2: "))
+c = float(input("Número 3: "))
+print(f"Mayor: {max(a, b, c)}")
+print(f"Menor: {min(a, b, c)}")

@@ -1,0 +1,4 @@
+# Lee dos números y los muestra ordenados
+a = float(input("Número 1: "))
+b = float(input("Número 2: "))
+print(f"Ordenados: {min(a, b)}, {max(a, b)}")

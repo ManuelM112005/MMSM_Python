@@ -1,0 +1,9 @@
+# Detecta si hubo alguna nota con valor 10
+hubo_10 = False
+while True:
+    nota = float(input("Nota (-1 para terminar): "))
+    if nota == -1:
+        break
+    if nota == 10:
+        hubo_10 = True
+print("Hubo nota 10" if hubo_10 else "No hubo nota 10")

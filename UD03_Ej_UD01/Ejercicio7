@@ -1,0 +1,8 @@
+# Conversor de millas marinas a metros
+millas = float(input("Millas marinas: "))
+
+# 1 milla marina = 1852 metros
+metros = millas * 1852
+
+# Mostrar resultado
+print(f"Metros: {metros}")

@@ -1,0 +1,9 @@
+# Calculadora de descuento
+precio_original = float(input("Precio original: "))
+precio_venta = float(input("Precio de venta: "))
+
+# Calcula el porcentaje de descuento
+descuento = ((precio_original - precio_venta) / precio_original) * 100
+
+# Muestra el resultado
+print(f"Descuento: {descuento:.1f}%")

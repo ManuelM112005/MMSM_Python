@@ -1,0 +1,7 @@
+# Lee 100 números y detecta si hay negativo
+negativo = False
+for _ in range(100):
+    num = float(input("Número: "))
+    if num < 0:
+        negativo = True
+print("Hubo negativo" if negativo else "No hubo negativo")

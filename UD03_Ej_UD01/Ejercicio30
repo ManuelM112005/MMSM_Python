@@ -1,0 +1,9 @@
+# Calcula billetes mínimos para una cantidad de euros
+euros = int(input("Cantidad (múltiplo de 5): "))
+billetes = [500, 200, 100, 50, 20, 10, 5]
+
+for billete in billetes:
+    cantidad = euros // billete  # División entera
+    if cantidad > 0:
+        print(f"{cantidad} billete(s) de {billete}€")
+        euros %= billete  # Resto de la división

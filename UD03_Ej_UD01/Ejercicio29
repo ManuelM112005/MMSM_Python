@@ -1,0 +1,19 @@
+# Juego: ordenador adivina número pensado por usuario
+import random
+min_num = 1
+max_num = 100
+intentos = 0
+
+while True:
+    intento = random.randint(min_num, max_num)
+    print(f"¿Es {intento}?")
+    respuesta = input("(mayor/menor/igual): ").lower()
+    intentos += 1
+    
+    if respuesta == "igual":
+        print(f"¡Adiviné en {intentos} intentos!")
+        break
+    elif respuesta == "mayor":
+        min_num = intento + 1  # Ajusta rango mínimo
+    elif respuesta == "menor":
+        max_num = intento - 1  # Ajusta rango máximo
