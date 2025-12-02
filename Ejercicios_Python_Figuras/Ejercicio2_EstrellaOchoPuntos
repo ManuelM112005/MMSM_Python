@@ -1,0 +1,15 @@
+def estrella_8_puntas():
+    n = 9
+    centro = n // 2
+    filas_a_mostrar = [0, 1, 2, centro, centro+2, centro+3, centro+4]
+    
+    for i in filas_a_mostrar:
+        fila = ""
+        for j in range(n):
+            if i == centro or j == centro or i == j or i + j == n - 1:
+                fila += "*"
+            else:
+                fila += " "
+        print(fila)
+
+estrella_8_puntas()

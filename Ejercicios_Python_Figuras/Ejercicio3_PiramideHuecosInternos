@@ -1,0 +1,18 @@
+def piramide_huecos(n):
+    for i in range(n):
+        espacios = n - i - 1
+        
+        if i == 0:
+            print(" " * espacios + "*")
+        elif i == 1:
+            print(" " * espacios + "* *")
+        elif i == 2:
+            print(" " * espacios + "*" + "   " + "*")
+        elif i == 3:
+            print(" " * espacios + "* * * *")
+        elif i == 4:
+            print(" " * espacios + "*" + " " * 7 + "*")
+        else:
+            print("*" * (2 * n - 1))
+
+piramide_huecos(6)

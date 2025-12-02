@@ -1,0 +1,14 @@
+def rombo_solido(n):
+    altura_total = 2 * n - 1
+    
+    for i in range(altura_total):
+        if i < n:
+            espacios = n - i - 1
+            asteriscos = 2 * i + 1
+        else:
+            espacios = i - n + 1
+            asteriscos = 2 * (2 * n - i - 2) + 1
+        
+        print(" " * espacios + "*" * asteriscos)
+
+rombo_solido(4)

@@ -1,0 +1,20 @@
+def diamante_hueco(n):
+    altura_total = 2 * n - 1
+    for i in range(n):
+        espacios = n - i - 1
+        if i == 0:
+            print(" " * espacios + "*")
+        else:
+            espacios_medio = 2 * i - 1
+            print(" " * espacios + "*" + " " * espacios_medio + "*")
+    for i in range(n - 2, -1, -1):
+        espacios = n - i - 1
+        if i == 0:
+            print(" " * espacios + "*")
+        else:
+            espacios_medio = 2 * i - 1
+            print(" " * espacios + "*" + " " * espacios_medio + "*")
+
+
+print("Diamante hueco para n=5:")
+diamante_hueco(5)
