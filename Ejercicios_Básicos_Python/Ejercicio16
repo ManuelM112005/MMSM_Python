@@ -1,0 +1,12 @@
+# Leer dos cadenas y concatenarlas manualmente sin usar el operador + en una sola operación (concatenar carácter a carácter con un ciclo).
+
+cadena1 = "Hola "
+cadena2 = "Mundo"
+resultado = ""
+
+for caracter in cadena1:
+    resultado += caracter
+for caracter in cadena2:
+    resultado += caracter
+
+print(resultado)

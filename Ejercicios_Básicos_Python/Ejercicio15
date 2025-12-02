@@ -1,0 +1,13 @@
+# Dada una cadena, construir una nueva cadena donde cada vocal se reemplaza por un asterisco '*'.
+
+cadena = "programación"
+vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ"
+resultado = ""
+
+for caracter in cadena:
+    if caracter in vocales:
+        resultado += "*"
+    else:
+        resultado += caracter
+
+print(resultado)

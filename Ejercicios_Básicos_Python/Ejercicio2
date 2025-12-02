@@ -1,0 +1,43 @@
+# Concatenar caracteres o cadenas utilizando el operador + para formar nuevas cadenas.
+
+caracter1 = 'H'
+caracter2 = 'o'
+caracter3 = 'l'
+caracter4 = 'a'
+palabra = caracter1 + caracter2 + caracter3 + caracter4
+print(palabra)
+
+saludo = "Hola"
+espacio = " "
+nombre = "Mundo"
+mensaje = saludo + espacio + nombre
+print(mensaje)
+
+edad = 25
+texto = "Tengo " + str(edad) + " años"
+print(texto)
+
+vocales = "aeiou"
+resultado = ""
+for vocal in vocales:
+    resultado += vocal + "-"
+print(resultado)
+
+cadena1 = "Python"
+cadena2 = " es"
+cadena3 = " genial"
+frase = cadena1 + cadena2 + cadena3
+print(frase)
+
+parte1 = "Aprendiendo"
+parte2 = "a"
+parte3 = "programar"
+oracion = parte1 + " " + parte2 + " " + parte3
+print(oracion)
+
+a = "¡"
+b = "Bienvenido"
+c = " a "
+d = "Python!"
+mensaje_completo = a + b + c + d
+print(mensaje_completo)

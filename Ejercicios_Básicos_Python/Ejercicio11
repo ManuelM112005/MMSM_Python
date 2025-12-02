@@ -1,0 +1,12 @@
+# Construir una nueva cadena con todos los caracteres de la cadena original, pero duplicando cada vocal.
+
+cadena = "casa"
+vocales = "aeiouAEIOU"
+resultado = ""
+
+for caracter in cadena:
+    resultado += caracter
+    if caracter in vocales:
+        resultado += caracter
+
+print(resultado)

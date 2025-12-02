@@ -1,0 +1,14 @@
+# Reemplazar un carácter por otro recorriendo la cadena y concatenando a una nueva cadena.
+
+original = "banana"
+viejo = "a"
+nuevo = "o"
+resultado = ""
+
+for caracter in original:
+    if caracter == viejo:
+        resultado += nuevo
+    else:
+        resultado += caracter
+
+print(resultado)

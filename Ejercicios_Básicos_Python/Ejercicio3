@@ -1,0 +1,21 @@
+# Contar cuántas veces aparece un carácter dado en una cadena usando for y un contador.
+
+cadena = "programación en python"
+caracter = "o"
+contador = 0
+
+for letra in cadena:
+    if letra == caracter:
+        contador += 1
+
+print(f"El carácter '{caracter}' aparece {contador} veces")
+
+cadena2 = "banana"
+caracter2 = "a"
+contador2 = 0
+
+for letra in cadena2:
+    if letra == caracter2:
+        contador2 += 1
+
+print(f"El carácter '{caracter2}' aparece {contador2} veces")

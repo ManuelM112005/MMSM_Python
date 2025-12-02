@@ -1,0 +1,11 @@
+# Leer una cadena y construir una nueva cadena dejando sólo los caracteres que son consonantes (sin listas, usando condiciones y concatenación).
+
+cadena = "Python Programming"
+vocales = "aeiouAEIOU"
+consonantes = ""
+
+for caracter in cadena:
+    if ('a' <= caracter <= 'z' or 'A' <= caracter <= 'Z') and caracter not in vocales:
+        consonantes += caracter
+
+print(consonantes)

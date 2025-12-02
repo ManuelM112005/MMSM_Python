@@ -1,0 +1,12 @@
+# Verificar si un carácter específico está en la cadena con un ciclo y comparaciones.
+
+cadena = "programación"
+caracter = "m"
+encontrado = False
+
+for letra in cadena:
+    if letra == caracter:
+        encontrado = True
+        break
+
+print(encontrado)

@@ -1,0 +1,13 @@
+# Convertir todas las letras a mayúsculas usando ciclos y sumas de caracteres (sin usar los métodos upper() o lower()).
+
+cadena = "Hola Mundo"
+mayusculas = ""
+diferencia = ord('a') - ord('A')
+
+for caracter in cadena:
+    if 'a' <= caracter <= 'z':
+        mayusculas += chr(ord(caracter) - diferencia)
+    else:
+        mayusculas += caracter
+
+print(mayusculas)

@@ -1,0 +1,35 @@
+# Construir manualmente una nueva cadena añadiendo un carácter a la vez (ejemplo: filtrar caracteres o construir cadenas invertidas).
+
+cadena = "Python"
+nueva_cadena = ""
+
+for caracter in cadena:
+    nueva_cadena += caracter
+
+print(nueva_cadena)
+
+texto = "Hola123Mundo456"
+solo_letras = ""
+
+for caracter in texto:
+    if caracter.isalpha():
+        solo_letras += caracter
+
+print(solo_letras)
+
+original = "abcdef"
+invertida = ""
+
+for caracter in original:
+    invertida = caracter + invertida
+
+print(invertida)
+
+cadena_larga = "a1b2c3d4e5"
+solo_numeros = ""
+
+for caracter in cadena_larga:
+    if caracter.isdigit():
+        solo_numeros += caracter
+
+print(solo_numeros)

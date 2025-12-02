@@ -1,0 +1,15 @@
+# Leer una cadena y crear una nueva donde sólo aparezcan los caracteres que se repiten más de una vez.
+
+cadena = "programming"
+resultado = ""
+
+for i in range(len(cadena)):
+    caracter = cadena[i]
+    contador = 0
+    for j in range(len(cadena)):
+        if cadena[j] == caracter:
+            contador += 1
+    if contador > 1 and caracter not in resultado:
+        resultado += caracter
+
+print(resultado)
