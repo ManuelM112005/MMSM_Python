@@ -1,0 +1,9 @@
+a = float(input("Introduce un número: "))
+b = float(input("Introduce otro número: "))
+print(a + b)
+print(a - b)
+print(a * b)
+if b != 0:
+    print(a / b)
+else:
+    print("División por cero")

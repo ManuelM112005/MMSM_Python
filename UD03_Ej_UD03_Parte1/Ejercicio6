@@ -1,0 +1,4 @@
+precio_original = float(input("Introduce el precio original: "))
+precio_venta = float(input("Introduce el precio de venta: "))
+descuento = ((precio_original - precio_venta) / precio_original) * 100
+print(descuento)

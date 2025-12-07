@@ -1,0 +1,6 @@
+a = float(input("Introduce un número: "))
+b = float(input("Introduce otro número: "))
+if a > b:
+    print(a)
+else:
+    print(b)

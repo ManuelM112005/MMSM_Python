@@ -1,0 +1,13 @@
+a = float(input("Introduce un número: "))
+b = float(input("Introduce un número: "))
+c = float(input("Introduce un número: "))
+mayor = max(a, b, c)
+menor = min(a, b, c)
+print("Mayor:", mayor)
+print("Menor:", menor)
+if a == b:
+    print("a y b son iguales")
+if a == c:
+    print("a y c son iguales")
+if b == c:
+    print("b y c son iguales")

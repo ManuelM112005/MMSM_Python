@@ -1,0 +1,13 @@
+numero = int(input("Introduce un número: "))
+if 0 <= numero <= 9:
+    print(1)
+elif 10 <= numero <= 99:
+    print(2)
+elif 100 <= numero <= 999:
+    print(3)
+elif 1000 <= numero <= 9999:
+    print(4)
+elif 10000 <= numero <= 99999:
+    print(5)
+else:
+    print("Número fuera de rango")

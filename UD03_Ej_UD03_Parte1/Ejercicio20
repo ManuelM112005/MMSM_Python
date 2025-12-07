@@ -1,0 +1,15 @@
+calificacion = float(input("Introduce tu calificación: "))
+if 0 <= calificacion < 3:
+    print("Muy Deficiente")
+elif 3 <= calificacion < 5:
+    print("Insuficiente")
+elif 5 <= calificacion < 6:
+    print("Suficiente")
+elif 6 <= calificacion < 7:
+    print("Bien")
+elif 7 <= calificacion < 9:
+    print("Notable")
+elif 9 <= calificacion <= 10:
+    print("Sobresaliente")
+else:
+    print("Calificación no válida")

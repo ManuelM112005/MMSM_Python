@@ -1,0 +1,18 @@
+nombre = input("Escribe tu nombre: ")
+horas = float(input("Introduce el número de horas que has trabajado: "))
+tarifa = float(input("Introduce tu salario: "))
+if horas <= 35:
+    salario_bruto = horas * tarifa
+else:
+    salario_bruto = 35 * tarifa + (horas - 35) * tarifa * 1.5
+if salario_bruto <= 500:
+    impuesto = 0
+elif salario_bruto <= 900:
+    impuesto = (salario_bruto - 500) * 0.25
+else:
+    impuesto = 400 * 0.25 + (salario_bruto - 900) * 0.45
+salario_neto = salario_bruto - impuesto
+print(nombre)
+print(salario_bruto)
+print(impuesto)
+print(salario_neto)

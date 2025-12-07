@@ -1,0 +1,19 @@
+import random
+dado1 = random.randint(1, 6)
+dado2 = random.randint(1, 6)
+dado3 = random.randint(1, 6)
+seis = 0
+if dado1 == 6:
+    seis += 1
+if dado2 == 6:
+    seis += 1
+if dado3 == 6:
+    seis += 1
+if seis == 3:
+    print("Excelente")
+elif seis == 2:
+    print("Muy bien")
+elif seis == 1:
+    print("Regular")
+else:
+    print("Pésimo")

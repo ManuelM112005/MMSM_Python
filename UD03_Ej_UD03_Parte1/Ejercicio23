@@ -1,0 +1,14 @@
+valor = float(input("Introduce el valor: "))
+pago = input("Elige el método de pago: ")
+if pago == "contado":
+    descuento = valor * 0.05
+    total = valor - descuento
+    print(descuento)
+    print(total)
+elif pago == "tarjeta":
+    recargo = valor * 0.03
+    total = valor + recargo
+    print(recargo)
+    print(total)
+else:
+    print("Método de pago no válido")

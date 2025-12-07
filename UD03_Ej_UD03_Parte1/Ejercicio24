@@ -1,0 +1,9 @@
+monto = float(input("Introduce el precio: "))
+dia = input("Escribe un día: ")
+if dia == "martes" or dia == "jueves":
+    descuento = monto * 0.15
+    total = monto - descuento
+    print(descuento)
+    print(total)
+else:
+    print(monto)

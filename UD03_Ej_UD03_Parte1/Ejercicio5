@@ -1,0 +1,9 @@
+import math
+radio = float(input("Introduce un número: "))
+diametro = 2 * radio
+circunferencia = math.pi * diametro
+area_circulo = math.pi * radio**2
+volumen_esfera = (4/3) * math.pi * radio**3
+print(circunferencia)
+print(area_circulo)
+print(volumen_esfera)

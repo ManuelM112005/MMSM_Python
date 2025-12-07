@@ -1,0 +1,20 @@
+saldo = 1000
+while True:
+    print("Bienvenido a su Cajero Virtual")
+    print("1. Ingresar dinero en cuenta")
+    print("2. Retirar dinero de la cuenta")
+    print("3. Salir")
+    opcion = int(input("Elige una opción: "))
+    if opcion == 1:
+        cantidad = float(input("Introduce la cantidad que desea ingresar: "))
+        saldo += cantidad
+        print("Saldo actual:", saldo)
+    elif opcion == 2:
+        cantidad = float(input("Introduce la cantidad que desea retirar: "))
+        if cantidad <= saldo:
+            saldo -= cantidad
+            print("Saldo actual:", saldo)
+        else:
+            print("Fondos insuficientes")
+    elif opcion == 3:
+        break

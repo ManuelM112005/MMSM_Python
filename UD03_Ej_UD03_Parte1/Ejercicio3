@@ -1,0 +1,3 @@
+lado = float(input("Introduce un numero: "))
+area = lado * lado
+print(area)
