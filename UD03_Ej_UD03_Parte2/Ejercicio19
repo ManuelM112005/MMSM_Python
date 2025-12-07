@@ -1,0 +1,18 @@
+import random
+print("Piensa un número del 1 al 100. Presiona Enter cuando estés listo.")
+input()
+min_num = 1
+max_num = 100
+intentos = 0
+while True:
+    intento = random.randint(min_num, max_num)
+    print("¿Es", intento, "?")
+    respuesta = input("Responde 'mayor', 'menor' o 'igual': ")
+    intentos += 1
+    if respuesta == 'igual':
+        print("¡Adiviné en", intentos, "intentos!")
+        break
+    elif respuesta == 'mayor':
+        min_num = intento + 1
+    elif respuesta == 'menor':
+        max_num = intento - 1

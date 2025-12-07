@@ -1,0 +1,6 @@
+A = int(input("Introduce el valor de A: "))
+B = int(input("Introduce el valor de B: "))
+resultado = 1
+for _ in range(B):
+    resultado *= A
+print(resultado)

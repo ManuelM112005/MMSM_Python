@@ -1,0 +1,7 @@
+cantidad = int(input("Introduce la cantidad en euros (múltiplo de 5): "))
+billetes = [500, 200, 100, 50, 20, 10, 5]
+for billete in billetes:
+    num_billetes = cantidad // billete
+    if num_billetes > 0:
+        print(num_billetes, "billete(s) de", billete, "€")
+    cantidad %= billete

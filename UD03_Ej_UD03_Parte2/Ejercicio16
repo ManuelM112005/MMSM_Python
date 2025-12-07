@@ -1,0 +1,11 @@
+hay_diez = False
+while True:
+    nota = float(input("Introduce una nota (0-10), -1 para terminar: "))
+    if nota == -1:
+        break
+    if nota == 10:
+        hay_diez = True
+if hay_diez:
+    print("Hubo al menos una nota con valor 10")
+else:
+    print("No hubo ninguna nota con valor 10")
