@@ -1,0 +1,5 @@
+velocidad = float(input("Introduce la velocidad de los coches (km/h): "))
+distancia_inicial = 150 - 70
+tiempo_encuentro = distancia_inicial / (2 * velocidad)
+kilometro_encuentro = 70 + velocidad * tiempo_encuentro
+print("Se encuentran en el kilómetro:", kilometro_encuentro)

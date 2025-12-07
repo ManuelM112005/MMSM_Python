@@ -1,0 +1,15 @@
+dado = int(input("Introduce el resultado del dado (1-6): "))
+if dado == 1:
+    print("SEIS")
+elif dado == 2:
+    print("CINCO")
+elif dado == 3:
+    print("CUATRO")
+elif dado == 4:
+    print("TRES")
+elif dado == 5:
+    print("DOS")
+elif dado == 6:
+    print("UNO")
+else:
+    print("ERROR: número incorrecto.")

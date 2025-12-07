@@ -1,0 +1,9 @@
+N = int(input("Introduce el número de trabajadores: "))
+total_empresa = 0
+for i in range(N):
+    horas = float(input(f"Introduce las horas trabajadas por el trabajador {i+1}: "))
+    sueldo_por_hora = float(input(f"Introduce el sueldo por hora del trabajador {i+1}: "))
+    sueldo_semanal = horas * sueldo_por_hora
+    print(f"Sueldo semanal del trabajador {i+1}: {sueldo_semanal}")
+    total_empresa += sueldo_semanal
+print("Total pagado por la empresa:", total_empresa)

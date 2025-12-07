@@ -1,0 +1,10 @@
+HH = int(input("Introduce la hora de salida (HH): "))
+MM = int(input("Introduce los minutos de salida (MM): "))
+SS = int(input("Introduce los segundos de salida (SS): "))
+T = int(input("Introduce el tiempo de viaje en segundos (T): "))
+tiempo_salida_segundos = HH * 3600 + MM * 60 + SS
+tiempo_llegada_segundos = tiempo_salida_segundos + T
+HH_llegada = (tiempo_llegada_segundos // 3600) % 24
+MM_llegada = (tiempo_llegada_segundos % 3600) // 60
+SS_llegada = tiempo_llegada_segundos % 60
+print("Hora de llegada: {:02d}:{:02d}:{:02d}".format(HH_llegada, MM_llegada, SS_llegada))

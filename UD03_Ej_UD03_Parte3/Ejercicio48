@@ -1,0 +1,6 @@
+ahorro_total = 0
+for mes in range(1, 13):
+    deposito = float(input(f"Introduce el depósito del mes {mes}: "))
+    ahorro_total += deposito
+    print(f"Ahorro acumulado hasta el mes {mes}: {ahorro_total}")
+print("Ahorro total anual:", ahorro_total)

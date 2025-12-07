@@ -1,0 +1,23 @@
+dia = int(input("Introduce el día: "))
+mes = int(input("Introduce el mes: "))
+anio = int(input("Introduce el año: "))
+valido = True
+if mes < 1 or mes > 12:
+    valido = False
+elif mes == 2:
+    if (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0):
+        if dia < 1 or dia > 29:
+            valido = False
+    else:
+        if dia < 1 or dia > 28:
+            valido = False
+elif mes in [4, 6, 9, 11]:
+    if dia < 1 or dia > 30:
+        valido = False
+else:
+    if dia < 1 or dia > 31:
+        valido = False
+if valido:
+    print("Fecha correcta")
+else:
+    print("Fecha incorrecta")

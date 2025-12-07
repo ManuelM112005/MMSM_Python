@@ -1,0 +1,5 @@
+cadena = input("Introduce una cadena: ")
+if len(cadena) == 1 and cadena.isupper():
+    print("Es una letra mayúscula")
+else:
+    print("No es una letra mayúscula o es más de un carácter")

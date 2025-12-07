@@ -1,0 +1,7 @@
+distancia = float(input("Introduce la distancia entre los vehículos (km): "))
+v1 = float(input("Introduce la velocidad del vehículo más rápido (km/h): "))
+v2 = float(input("Introduce la velocidad del vehículo más lento (km/h): "))
+velocidad_relativa = v1 - v2
+tiempo_horas = distancia / velocidad_relativa
+tiempo_minutos = tiempo_horas * 60
+print("Tiempo de alcance (minutos):", tiempo_minutos)

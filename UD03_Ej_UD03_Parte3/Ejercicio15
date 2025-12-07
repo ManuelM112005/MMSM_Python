@@ -1,0 +1,5 @@
+A = input("Introduce el valor de A: ")
+B = input("Introduce el valor de B: ")
+A, B = B, A
+print("A =", A)
+print("B =", B)

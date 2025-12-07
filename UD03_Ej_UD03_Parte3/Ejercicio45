@@ -1,0 +1,24 @@
+while True:
+    lim_inf = float(input("Introduce el límite inferior: "))
+    lim_sup = float(input("Introduce el límite superior: "))
+    if lim_inf < lim_sup:
+        break
+suma_dentro = 0
+fuera = 0
+igual_limite = False
+while True:
+    num = float(input("Introduce un número (0 para terminar): "))
+    if num == 0:
+        break
+    if num > lim_inf and num < lim_sup:
+        suma_dentro += num
+    else:
+        fuera += 1
+    if num == lim_inf or num == lim_sup:
+        igual_limite = True
+print("Suma dentro del intervalo:", suma_dentro)
+print("Números fuera del intervalo:", fuera)
+if igual_limite:
+    print("Se introdujo algún número igual a los límites")
+else:
+    print("No se introdujo ningún número igual a los límites")

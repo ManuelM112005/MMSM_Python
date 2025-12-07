@@ -1,0 +1,16 @@
+import random
+numero_secreto = random.randint(1, 100)
+intentos = 10
+adivinado = False
+for intento in range(1, intentos + 1):
+    num = int(input("Introduce un número entre 1 y 100: "))
+    if num == numero_secreto:
+        print("¡Has acertado en", intento, "intentos!")
+        adivinado = True
+        break
+    elif num < numero_secreto:
+        print("El número es mayor. Te quedan", intentos - intento, "intentos.")
+    else:
+        print("El número es menor. Te quedan", intentos - intento, "intentos.")
+if not adivinado:
+    print("Lo siento, el número era", numero_secreto)

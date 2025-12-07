@@ -1,0 +1,22 @@
+duracion = int(input("Introduce la duración de la llamada en minutos: "))
+dia = input("Introduce el día de la semana: ")
+turno = input("Introduce el turno (mañana/tarde): ")
+if duracion <= 5:
+    costo = duracion * 1.0
+elif duracion <= 8:
+    costo = 5 * 1.0 + (duracion - 5) * 0.8
+elif duracion <= 10:
+    costo = 5 * 1.0 + 3 * 0.8 + (duracion - 8) * 0.7
+else:
+    costo = 5 * 1.0 + 3 * 0.8 + 2 * 0.7 + (duracion - 10) * 0.5
+if dia.lower() == "domingo":
+    impuesto = costo * 0.03
+else:
+    if turno.lower() == "mañana":
+        impuesto = costo * 0.15
+    else:
+        impuesto = costo * 0.10
+total = costo + impuesto
+print("Costo base:", costo)
+print("Impuesto:", impuesto)
+print("Total a pagar:", total)
